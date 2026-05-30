@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PH Home Maintenance & Handyman Services</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    line-height:1.6;
+    color:#333;
+    background:#fff;
+}
+
+/* HERO */
+header{
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url('images/hero-painting.jpg');
+    background-size:cover;
+    background-position:center;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+/* HERO CONTENT */
+.hero{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+/* LOGO FIX (BIGGER + CLEAN) */
+.logo{
+    width:220px;
+    max-width:80%;
+    height:auto;
+    margin-bottom:15px;
+}
+
+/* TEXT */
+.hero h1{
+    font-size:3rem;
+    margin-top:10px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    margin:15px 0;
+}
+
+/* BUTTON */
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#f39c12;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    transition:0.3s;
+    margin-top:10px;
+}
+
+.btn:hover{
+    background:#e67e22;
+}
+
+/* SECTIONS */
+section{
+    padding:60px 10%;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
+    font-size:2rem;
+}
+
+/* SERVICES */
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#f5f5f5;
+    padding:25px;
+    border-radius:10px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+/* GALLERY */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+}
+
+.gallery img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+    transition:0.3s ease;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+    box-shadow:0 10px 20px rgba(0,0,0,0.25);
+}
+
+/* ABOUT */
+.about{
+    text-align:center;
+    max-width:900px;
+    margin:auto;
+}
+
+/* CONTACT */
+.contact{
+    background:#222;
+    color:white;
+    text-align:center;
+}
+
+.contact a{
+    color:#f39c12;
+    text-decoration:none;
+}
+
+/* FOOTER */
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<header>
+    <div class="hero">
+        <img src="images/logo.png" alt="PH Logo" class="logo">
+
+        <h1>PH Home Maintenance & Handyman Services</h1>
+        <p>Professional Painting, Waterproofing & Home Improvement Services</p>
+
+        <a href="https://wa.me/27642919982" class="btn">Get Free Quote</a>
+    </div>
+</header>
+
+<!-- SERVICES -->
+<section>
+    <h2>Our Services</h2>
+
+    <div class="services">
+
+        <div class="card">
+            <h3>Interior Painting</h3>
+            <p>Walls, ceilings, bedrooms, kitchens and living spaces.</p>
+        </div>
+
+        <div class="card">
+            <h3>Exterior Painting</h3>
+            <p>Homes, walls, garages and commercial buildings.</p>
+        </div>
+
+        <div class="card">
+            <h3>Waterproofing</h3>
+            <p>Roof waterproofing and leak protection solutions.</p>
+        </div>
+
+        <div class="card">
+            <h3>Wood Varnishing</h3>
+            <p>Restoration and protection of wooden surfaces.</p>
+        </div>
+
+        <div class="card">
+            <h3>Handyman Services</h3>
+            <p>General repairs and home maintenance solutions.</p>
+        </div>
+
+        <div class="card">
+            <h3>All Surfaces</h3>
+            <p>Brick, plaster, concrete, wood, metal and more.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- GALLERY -->
+<section>
+    <h2>Our Work</h2>
+
+    <div class="gallery">
+
+        <img src="images/pic1.png" alt="Work 1">
+        <img src="images/pic2.png" alt="Work 2">
+        <img src="images/pic3.png" alt="Work 3">
+        <img src="images/pic4.png" alt="Work 4">
+        <img src="images/pic5.png" alt="Work 5">
+        <img src="images/pic6.png" alt="Work 6">
+        <img src="images/pic7.png" alt="Work 7">
+        <img src="images/pic8.png" alt="Work 8">
+        <img src="images/pic9.png" alt="Work 9">
+        <img src="images/pic10.png" alt="Work 10">
+        <img src="images/pic11.png" alt="Work 11">
+        <img src="images/pic12.png" alt="Work 12">
+        <img src="images/pic13.png" alt="Work 13">
+
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+    <h2>About Us</h2>
+    <p>
+        My name is <strong>Pepu</strong>. PH Home Maintenance & Handyman Services
+        delivers high-quality painting, waterproofing, and maintenance work.
+        We focus on professionalism, reliability, and customer satisfaction.
+    </p>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+    <h2>Contact Us</h2>
+
+    <p><strong>Pepu</strong></p>
+    <p>Phone: <a href="tel:+27642919982">+27 64 291 9982</a></p>
+    <p>WhatsApp: <a href="https://wa.me/27642919982">Chat Now</a></p>
+</section>
+
+<footer>
+    © 2026 PH Home Maintenance & Handyman Services. All Rights Reserved.
+</footer>
+
+<!-- WHATSAPP BUTTON -->
+<a class="whatsapp" href="https://wa.me/27642919982">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+</body>
+</html>
