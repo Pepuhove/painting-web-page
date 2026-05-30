@@ -43,7 +43,7 @@ header{
     align-items:center;
 }
 
-/* LOGO FIX (BIGGER + CLEAN) */
+/* LOGO */
 .logo{
     width:220px;
     max-width:80%;
@@ -155,21 +155,41 @@ footer{
     padding:15px;
 }
 
-/* WHATSAPP BUTTON */
-.whatsapp{
+/* FLOATING BUTTONS */
+.float-btn{
     position:fixed;
-    bottom:20px;
-    right:20px;
-    background:#25D366;
-    color:white;
     width:60px;
     height:60px;
+    right:20px;
     border-radius:50%;
     display:flex;
     align-items:center;
     justify-content:center;
-    font-size:30px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.3);
+    z-index:1000;
+    transition:0.3s;
     text-decoration:none;
+}
+
+/* WHATSAPP */
+.whatsapp{
+    bottom:20px;
+    background:#25D366;
+    color:white;
+    font-size:28px;
+}
+
+/* EMAIL */
+.email{
+    bottom:90px;
+    background:#f39c12;
+    color:white;
+    font-size:24px;
+}
+
+/* HOVER EFFECT */
+.float-btn:hover{
+    transform:scale(1.15);
 }
 </style>
 </head>
@@ -179,12 +199,14 @@ footer{
 <!-- HERO -->
 <header>
     <div class="hero">
-        <img src="images/logo.png" alt="PH Logo" class="logo">
+        <img src="images/logo.png" class="logo" alt="Logo">
 
         <h1>PH Home Maintenance & Handyman Services</h1>
-        <p>Professional Painting, Waterproofing & Home Improvement Services</p>
+        <p>Professional Painting, Waterproofing & Home Improvement</p>
 
-        <a href="https://wa.me/27642919982" class="btn">Get Free Quote</a>
+        <a href="https://wa.me/27642919982?text=Hi%20PH%20Home%20Maintenance%2C%20I%20would%20like%20a%20quote" class="btn">
+            Get Free Quote
+        </a>
     </div>
 </header>
 
@@ -193,37 +215,12 @@ footer{
     <h2>Our Services</h2>
 
     <div class="services">
-
-        <div class="card">
-            <h3>Interior Painting</h3>
-            <p>Walls, ceilings, bedrooms, kitchens and living spaces.</p>
-        </div>
-
-        <div class="card">
-            <h3>Exterior Painting</h3>
-            <p>Homes, walls, garages and commercial buildings.</p>
-        </div>
-
-        <div class="card">
-            <h3>Waterproofing</h3>
-            <p>Roof waterproofing and leak protection solutions.</p>
-        </div>
-
-        <div class="card">
-            <h3>Wood Varnishing</h3>
-            <p>Restoration and protection of wooden surfaces.</p>
-        </div>
-
-        <div class="card">
-            <h3>Handyman Services</h3>
-            <p>General repairs and home maintenance solutions.</p>
-        </div>
-
-        <div class="card">
-            <h3>All Surfaces</h3>
-            <p>Brick, plaster, concrete, wood, metal and more.</p>
-        </div>
-
+        <div class="card"><h3>Interior Painting</h3><p>Walls, ceilings, rooms.</p></div>
+        <div class="card"><h3>Exterior Painting</h3><p>Homes, buildings & walls.</p></div>
+        <div class="card"><h3>Waterproofing</h3><p>Leak protection solutions.</p></div>
+        <div class="card"><h3>Wood Varnishing</h3><p>Wood restoration & protection.</p></div>
+        <div class="card"><h3>Handyman Services</h3><p>General repairs & maintenance.</p></div>
+        <div class="card"><h3>All Surfaces</h3><p>Brick, metal, plaster & more.</p></div>
     </div>
 </section>
 
@@ -232,21 +229,19 @@ footer{
     <h2>Our Work</h2>
 
     <div class="gallery">
-
-        <img src="images/pic1.jpeg" alt="Work 1">
-        <img src="images/pic2.jpeg" alt="Work 2">
-        <img src="images/pic3.jpeg" alt="Work 3">
-        <img src="images/pic4.jpeg" alt="Work 4">
-        <img src="images/pic5.jpeg" alt="Work 5">
-        <img src="images/pic6.jpeg" alt="Work 6">
-        <img src="images/pic7.jpeg" alt="Work 7">
-        <img src="images/pic8.jpeg" alt="Work 8">
-        <img src="images/pic9.jpeg" alt="Work 9">
-        <img src="images/pic10.jpeg" alt="Work 10">
-        <img src="images/pic11.jpeg" alt="Work 11">
-        <img src="images/pic12.jpeg" alt="Work 12">
-        <img src="images/pic13.jpeg" alt="Work 13">
-
+        <img src="images/pic1.jpeg">
+        <img src="images/pic2.jpeg">
+        <img src="images/pic3.jpeg">
+        <img src="images/pic4.jpeg">
+        <img src="images/pic5.jpeg">
+        <img src="images/pic6.jpeg">
+        <img src="images/pic7.jpeg">
+        <img src="images/pic8.jpeg">
+        <img src="images/pic9.jpeg">
+        <img src="images/pic10.jpeg">
+        <img src="images/pic11.jpeg">
+        <img src="images/pic12.jpeg">
+        <img src="images/pic13.jpeg">
     </div>
 </section>
 
@@ -254,9 +249,8 @@ footer{
 <section class="about">
     <h2>About Us</h2>
     <p>
-        My name is <strong>Pepu</strong>. PH Home Maintenance & Handyman Services
-        delivers high-quality painting, waterproofing, and maintenance work.
-        We focus on professionalism, reliability, and customer satisfaction.
+        My name is <strong>Pepu</strong>. We provide professional painting, waterproofing,
+        and handyman services across Cape Town. Quality, trust, and clean work guaranteed.
     </p>
 </section>
 
@@ -265,17 +259,28 @@ footer{
     <h2>Contact Us</h2>
 
     <p><strong>Pepu</strong></p>
+
     <p>Phone: <a href="tel:+27642919982">+27 64 291 9982</a></p>
+
     <p>WhatsApp: <a href="https://wa.me/27642919982">Chat Now</a></p>
+
+    <p>Email: <a href="mailto:pepshove@gmail.com">pepshove@gmail.com</a></p>
 </section>
 
 <footer>
-    © 2026 PH Home Maintenance & Handyman Services. All Rights Reserved.
+    © 2026 PH Home Maintenance & Handyman Services
 </footer>
 
-<!-- WHATSAPP BUTTON -->
-<a class="whatsapp" href="https://wa.me/27642919982">
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/27642919982?text=Hi%20PH%20Home%20Maintenance%2C%20I%20would%20like%20a%20quote"
+class="float-btn whatsapp" target="_blank">
     <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- FLOATING EMAIL -->
+<a href="mailto:pepshove@gmail.com?subject=Quote%20Request&body=Hi%20PH%20Home%20Maintenance%2C%20I%20would%20like%20a%20quote"
+class="float-btn email">
+    <i class="fas fa-envelope"></i>
 </a>
 
 </body>
